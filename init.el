@@ -599,7 +599,7 @@ point reaches the beginning or end of the buffer, stop there."
 
 
 ;; Spellcheck current word
-(define-key flyspell-mode-map (kbd "s-\\") 'flyspell-correct-previous-word-generic) ;; Cmd+\ spellcheck word with popup
+(define-key flyspell-mode-map (kbd "s-\\") 'flyspell-correct-wrapper) ;; Cmd+\ spellcheck word with popup
 (define-key flyspell-mode-map (kbd "C-s-\\") 'ispell-word)                          ;; Ctrl+Cmd+\ spellcheck word using built UI
 
 
